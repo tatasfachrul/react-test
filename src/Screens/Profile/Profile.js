@@ -33,7 +33,7 @@ class Profile extends Component {
         <h1>Profile</h1>
         <h2>{name}</h2>
         <h2>{email}</h2>
-        <h2><Link to='/'>Back To Home</Link></h2>
+        <h2><Link to='/home'>Back To Home</Link></h2>
       </div>
     )
   }
