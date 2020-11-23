@@ -1,6 +1,7 @@
 import Axios from "axios";
 import React, { Component } from "react";
 import "./Home.style.css";
+import { Link } from 'react-router-dom'
 
 import Search from '../../Components/Search/Search'
 import Card from '../../Components/Card/Card'
@@ -20,7 +21,6 @@ class Home extends Component {
 
   async fetchData(){
     const result = await Axios.get('https://jsonplaceholder.typicode.com/users')
-    console.log(result)
     this.setState({ data: result.data })
   }
 
@@ -34,7 +34,7 @@ class Home extends Component {
       user.name.toLowerCase().includes(search.toLowerCase())
     )
 
-    return (
+    return (  
       <div className="App">
         <h1>User Data</h1>
         <Search 

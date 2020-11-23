@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 
-import Home from './Screens/Home/Home'
+import MainNavigation from './Navigations/MainNavigations'
 
 class App extends Component {
   render () {
     return (
-      <Home />
+      <MainNavigation />
     )
   }
 }
